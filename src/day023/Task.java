@@ -17,6 +17,7 @@ public class Task {
 
         String mesaj=input.next();
 
+/*
         char x1=mesaj.charAt(0);
         char x2=mesaj.charAt(1);
         char x3=mesaj.charAt(2);
@@ -36,6 +37,12 @@ public class Task {
         System.out.print(sifre3);
         System.out.print(sifre4);
         System.out.print(sifre5);
+*/
+        int key=7;
+
+        for (int i = 0; i < mesaj.length(); i++) {
+            System.out.print((char)(mesaj.charAt(i)^key));
+        }
 
     }
 }
