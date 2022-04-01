@@ -44,5 +44,16 @@ public class Task {
             System.out.print((char)(mesaj.charAt(i)^key));
         }
 
+        System.out.println();
+
+        Scanner inputInt=new Scanner(System.in);
+
+        System.out.print("Bir sayı giriniz : ");
+
+        int value= input.nextInt();
+        int mutlakDeger=value<0?-value:value; // value<0 ise -value al değilse value.
+        System.out.println("Mutlak Değer : "+mutlakDeger);
+
+
     }
 }
